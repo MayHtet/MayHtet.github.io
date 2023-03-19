@@ -52,7 +52,7 @@ body {
   height: 96%;
   position: relative;
   background-color: #262338;
-  background-image: url('resources/bondee-space.jpg');
+  background-image: url('/resources/bondee-space.jpg');
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 20px;
@@ -65,7 +65,7 @@ body {
   height: 96%;
   position: relative;
   background-color: #efdbbb;
-  background-image: url('resources/room-background.png');
+  background-image: url('/resources/room-background.png');
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 20px;
