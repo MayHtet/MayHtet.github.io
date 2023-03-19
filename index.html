@@ -13,14 +13,20 @@
                 <div class="screen" onclick="location.href='home.html';">
                     <script>
 
-        getParameterByName = function(url, name){
-        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(url);
-        if (results==null) {
-        return null;
-        }
-        return decodeURI(results[1]) || 0;
-}
-        document.write(" user id is : " + getParameterByName(window.location.href, 'nusid'));
+getParameterByName = function(name) {
+ if ("URLSearchParams" in window) {
+  //Browser supports URLSearchParams
+  let searchParams = window.location.search.substring(1);
+  //return searchParams.get(name);
+  return searchParams.get(name)
+ } else {
+  document.write(
+   "Your browser currently doesn't support URLSearchParams. Switch to another browser."
+  );
+  return null;
+ }
+};
+        document.write(" user id is : " + getParameterByName('nusid'));
 
                     </script>
                     
