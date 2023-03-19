@@ -11,7 +11,18 @@
         <div class="mobile">
             <div class="header-section">
                 <div class="screen" onclick="location.href='home.html';">
-                    
+                    <script>
+
+        getParameterByName = function(url, name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(url);
+        if (results==null) {
+        return null;
+        }
+        return decodeURI(results[1]) || 0;
+}
+        document.write(" user id is : " + getParameterByName(window.location.href, 'userid'));
+
+                    </script>
                     
                     <p style=" padding-top: 30px; padding-left: 10px;padding-right: 10px; justify-content: center; position: absolute;"> Clicking Anywhere on the Screen to Start.......</p>
                 </div>
