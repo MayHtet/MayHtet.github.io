@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint"
+        content="width=device-width,initial-scale=1.0" />
+    <title>My Room</title>
+   <link rel="stylesheet" type='text/css' href="../../style.css"/>
+   <script>
+
+
+
+    if (localStorage.getItem("seen_visitor10_badge") == undefined ){
+        localStorage.setItem("seen_visitor10_badge", "false");
+       
+       
+
+    }
+   
+
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="mobile">
+            <div class="header-section">
+                <div class="screen-room">
+                    <div class="mobile-top-left">
+                        <div class="button-circle" onclick="location.href='profile.html';"><img src="../../resources/back.png" alt=""/></div>
+                        
+                    </div>
+                    <div class="mobile-top-right">
+                        <div class="button-circle"><img src="../../resources/paint-roller.png" alt=""/></div>
+                        <div class="button-circle"><img src="../../resources/share.png" alt=""/></div>
+                        
+                    </div>
+
+                    <div class="mobile-bottom-left">
+                        <!--link to grid view -->
+                        <div style="font-size: 8px; font-family: Arial, Helvetica, sans-serif; color: rgb(98, 98, 98); text-align: center; "><div class="button-circle" ><img src="../../resources/bee.png" alt=""/></div>Neighbours</div>
+                        
+                    </div>
+                    <div class="mobile-bottom-right">
+                        <!--link to popup note list-->
+                        
+                        <!--link to popup visitor list-->
+                        <div style="font-size: 8px; font-family: Arial, Helvetica, sans-serif; color: rgb(98, 98, 98); text-align: center; "><div class="button-circle" onclick="visitor()"><div class="icon-visitor__badge">
+
+                            <script>
+
+                                    if(localStorage.getItem("seen_visitor10_badge") === "false") {
+                                    document.getElementsByClassName("icon-visitor__badge")[0].style.display ='flex';
+                                }
+                                function visitor(){
+            
+                                    localStorage.setItem("seen_visitor10_badge","true");
+                                    location.href='visitorlist6_with_note_noti.html';
+
+                                }
+                                
+                            </script>
+                        </div>
+                            
+                            
+                            
+                            <img src="../../resources/footprints.png" alt=""/></div>Visitors</div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+    </html>
