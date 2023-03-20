@@ -165,6 +165,19 @@ body {
   justify-content: flex-end; 
 }
 
+.mobile-next-top-right {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  height: 38px;
+  width: 50%;
+  margin-top: 10px;
+  margin-right: 5px;
+  display: flex;
+  flex: 3;
+  justify-content: flex-end; 
+}
+
 .mobile-bottom-left {
   position: absolute;
   bottom: 25px;
