@@ -41,7 +41,7 @@ body {
     width: 100%;
     height: 96%;
     position: relative;
-    background-color: #efdbbb;
+    background-color: #000000;
     margin-top: 20px;
     border-radius: 10px;
     z-index: 2;
@@ -52,7 +52,7 @@ body {
   height: 96%;
   position: relative;
   background-color: #262338;
-  background-image: url('/resources/bondee-space.jpeg');
+  background-image: url('resources/bondee-space.jpg');
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 20px;
@@ -65,7 +65,7 @@ body {
   height: 96%;
   position: relative;
   background-color: #efdbbb;
-  background-image: url('/resources/room-background.png');
+  background-image: url('resources/room-background.png');
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 20px;
@@ -90,6 +90,24 @@ body {
   border-radius: 10px;
   top: 0px;
   z-index: 2;
+}
+.note-room{
+  width: 100%;
+  height: 10%;
+  background-color: #7b766d;
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.note-room-bg{
+  width: 100%;
+  height: 20%;
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+  top: 0px;
+  z-index: 1;
 }
 
 .mobile-bottom-nav {
@@ -184,7 +202,83 @@ body {
   margin-bottom: 3px;
 }
 
+.button-circle-dark {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #acacac;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.icon-button__badge {
+  position: absolute;
+  top: 5px;
+  right: 17px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon-button-grid__badge {
+  position: absolute;
+  top: 5px;
+  right: 57px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon-note__badge {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 37px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon-visitor__badge {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 7px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
 .button-circle img{
+  width: 14px;
+  margin-top: 4px;
+  
+}
+
+.button-circle-dark img{
   width: 14px;
   margin-top: 4px;
   
@@ -205,7 +299,30 @@ body {
   margin: 3px 10px
   
 }
+
+.button-top-dark {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  width: 75px;  
+  font-size: 9px;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 15px;
+  background-color: #acacac;
+  cursor: pointer;
+  text-align: center;
+  margin: 3px 10px
+  
+}
 .button-top img{
+display: inline-block;
+vertical-align: middle;
+width: 14px;
+  
+}
+
+.button-top-dark img{
 display: inline-block;
 vertical-align: middle;
 width: 14px;
@@ -230,6 +347,23 @@ width: 14px;
   z-index: 2;
 }
 
+.visitor-section{
+  width: 100%;
+  height: 90%;
+  position:relative;
+  background-color: #ffffff;
+  margin-bottom: 38px;
+  bottom: 0px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.note-section{
+  width: 100%;
+  height: 60%;
+  position:relative;
+  z-index: 2;
+}
 .handle{
   background-color: rgb(189, 189, 189);
   position: absolute;
@@ -238,6 +372,46 @@ width: 14px;
   border-radius: 5px;
   margin-top: 10px;
   margin-left: 100px;
+
+}
+.multiple-notes-layout {
+
+  width: 100%;
+  height: 70%;
+  position:relative;
+  border-radius: 2px;
+  display: flex;
+  flex: 1;
+  justify-content: space-around; 
+}
+
+.note-layout{
+  width: 80%;
+  height: 100%;
+  position:relative;
+  background-color: #fffc00;
+  border-radius: 2px;
+  margin-left: 20px;
+  z-index: 2;
+}
+
+.note-piece{
+  width: 5%;
+  height: 90%;
+  position:relative;
+  background-color: #fffc00;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.note-noti{
+  background-color: #fffc00;
+  border-color: #000000;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-top: 15px;
+  margin-left: 155px;
 
 }
 
@@ -306,6 +480,24 @@ font-size: 14px;
     border-radius: 15px;
     text-align: center;
     margin: 3px 5px
+    
+  }
+  .stick-note-button{
+    display: block;
+    justify-content: center;
+    height: 25px;
+    line-height: 25px;
+    width: 100px;  
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 60px;
+    margin-top: 40px;
+    margin-left: 65px;
+    
     
   }
   
