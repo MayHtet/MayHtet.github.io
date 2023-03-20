@@ -5,20 +5,11 @@
         content="width=device-width,initial-scale=1.0" />
     <title>My Room</title>
    <link rel="stylesheet" type='text/css' href="../../style.css"/>
-<script>
+   <script>
+ 
 
 
-
-    if (localStorage.getItem("seen_visitor11_badge") == undefined) {
-        localStorage.setItem("seen_visitor11_badge", "false");
-        
-       
-
-    }
-   
-
-    </script>
-   
+   </script>
 </head>
 <body>
     <div class="container">
@@ -37,28 +28,15 @@
 
                     <div class="mobile-bottom-left">
                         <!--link to grid view -->
-                        <div style="font-size: 8px; font-family: Arial, Helvetica, sans-serif; color: rgb(98, 98, 98); text-align: center; "><div class="button-circle"><img src="../../resources/bee.png" alt=""/></div>Neighbours</div>
+                        <div style="font-size: 8px; font-family: Arial, Helvetica, sans-serif; color: rgb(98, 98, 98); text-align: center; "><div class="button-circle" onclick="location.href='friends_gridview.html';"><img src="../../resources/bee.png" alt=""/></div>Neighbours</div>
                         
                     </div>
-                    <div class="mobile-bottom-right">
-                        
+                    <div class="mobile-next-top-right">
                         
                         <!--link to popup visitor list-->
-                        <div style="font-size: 8px; font-family: Arial, Helvetica, sans-serif; color: rgb(98, 98, 98); text-align: center; "><div class="button-circle" onclick="visitor()"><div class="icon-visitor__badge">
+                        <div style="font-size: 8px; font-family: Arial, Helvetica, sans-serif; color: rgb(98, 98, 98); text-align: center; "><div class="button-circle" ><div class="icon-visitor__badge">
 
-                            <script>
-
-                                    if(localStorage.getItem("seen_visitor11_badge") === "false") {
-                                    document.getElementsByClassName("icon-visitor__badge")[0].style.display ='flex';
-                                }
-                                function visitor(){
-            
-                                    localStorage.setItem("seen_visitor11_badge","true");
-                                    location.href='visitorlist2_with_note_noti.html';
-
-                                }
-                                
-                            </script>
+                           
                         </div>
                             
                             
@@ -74,6 +52,8 @@
     </div>
 
     
+
+
 
 </body>
     </html>

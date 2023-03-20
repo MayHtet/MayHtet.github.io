@@ -9,9 +9,9 @@
 
 
 
-    if (localStorage.getItem("seen_visitor11_badge") == undefined) {
-        localStorage.setItem("seen_visitor11_badge", "false");
-        
+    if (localStorage.getItem("seen_visitor21_badge") == undefined){
+        localStorage.setItem("seen_visitor21_badge", "false");
+       
        
 
     }
@@ -37,10 +37,10 @@
 
                     <div class="mobile-bottom-left">
                         <!--link to grid view -->
-                        <div style="font-size: 8px; font-family: Arial, Helvetica, sans-serif; color: rgb(98, 98, 98); text-align: center; "><div class="button-circle"><img src="../../resources/bee.png" alt=""/></div>Neighbours</div>
+                        <div style="font-size: 8px; font-family: Arial, Helvetica, sans-serif; color: rgb(98, 98, 98); text-align: center; "><div class="button-circle" ><img src="../../resources/bee.png" alt=""/></div>Neighbours</div>
                         
                     </div>
-                    <div class="mobile-bottom-right">
+                    <div class="mobile-next-top-right">
                         
                         
                         <!--link to popup visitor list-->
@@ -48,13 +48,13 @@
 
                             <script>
 
-                                    if(localStorage.getItem("seen_visitor11_badge") === "false") {
+                                    if(localStorage.getItem("seen_visitor21_badge") === "false") {
                                     document.getElementsByClassName("icon-visitor__badge")[0].style.display ='flex';
                                 }
                                 function visitor(){
             
-                                    localStorage.setItem("seen_visitor11_badge","true");
-                                    location.href='visitorlist2_with_note_noti.html';
+                                    localStorage.setItem("seen_visitor21_badge","true");
+                                    location.href='visitorlist4_with_note_noti.html';
 
                                 }
                                 
