@@ -136,7 +136,58 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.bloc-icon-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-icon-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-icon-speechbubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-icon-bee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-icon-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bloc-icon img {
+  width: 18px;
+}
+
+.bloc-icon-home img {
+  width: 18px;
+}
+
+.bloc-icon-more img {
+  width: 18px;
+}
+
+.bloc-icon-speechbubble img {
+  width: 18px;
+}
+
+.bloc-icon-bee img {
+  width: 18px;
+}
+
+.bloc-icon-profile img {
   width: 18px;
 }
 
@@ -215,7 +266,175 @@ body {
   margin-bottom: 3px;
 }
 
+.button-circle-back {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-paintroller {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-share {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-bee {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-visitor {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-note {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-threedots {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-shirt {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-addevent {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-settings {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #f3fff4;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
 .button-circle-dark {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #acacac;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-dark-document {
+  height: 22px;
+  line-height: 22px;  
+  width: 22px;  
+  border-radius: 50%;
+  background-color: #acacac;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.button-circle-dark-sailingboat {
   height: 22px;
   line-height: 22px;  
   width: 22px;  
@@ -288,10 +507,71 @@ body {
 .button-circle img{
   width: 14px;
   margin-top: 4px;
-  
+}
+
+.button-circle-back img{
+  width: 14px;
+  margin-top: 4px;
+}
+
+.button-circle-paintroller img{
+  width: 14px;
+  margin-top: 4px;
+}
+
+.button-circle-share img{
+  width: 14px;
+  margin-top: 4px;
+}
+
+.button-circle-bee img{
+  width: 14px;
+  margin-top: 4px;
+}
+
+.button-circle-visitor img{
+  width: 14px;
+  margin-top: 4px;
+}
+
+.button-circle-note img{
+  width: 14px;
+  margin-top: 4px;
+}
+
+.button-circle-threedots img{
+  width: 14px;
+  margin-top: 4px;
+}
+
+.button-circle-shirt img{
+  width: 14px;
+  margin-top: 4px;
+}
+
+.button-circle-addevent img{
+  width: 14px;
+  margin-top: 4px;
+}
+
+.button-circle-settings img{
+  width: 14px;
+  margin-top: 4px;
 }
 
 .button-circle-dark img{
+  width: 14px;
+  margin-top: 4px;
+  
+}
+
+.button-circle-dark-document img{
+  width: 14px;
+  margin-top: 4px;
+  
+}
+
+.button-circle-dark-sailingboat img{
   width: 14px;
   margin-top: 4px;
   
@@ -326,8 +606,23 @@ body {
   cursor: pointer;
   text-align: center;
   margin: 3px 10px
-  
 }
+
+.button-top-dark-addfriends {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  width: 75px;  
+  font-size: 9px;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 15px;
+  background-color: #acacac;
+  cursor: pointer;
+  text-align: center;
+  margin: 3px 10px
+}
+
 .button-top img{
 display: inline-block;
 vertical-align: middle;
@@ -339,7 +634,12 @@ width: 14px;
 display: inline-block;
 vertical-align: middle;
 width: 14px;
-  
+}
+
+.button-top-dark-addfriends img{
+display: inline-block;
+vertical-align: middle;
+width: 14px;
 }
 
 .center-txt {
@@ -457,7 +757,6 @@ font-size: 14px;
   justify-content: space-evenly; 
 }
 
-
 .profile-button{
   display: block;
   height: 25px;
@@ -470,7 +769,34 @@ font-size: 14px;
   border-radius: 1px;
   text-align: center;
   margin: 3px 5px
-  
+}
+
+.profile-button-friends {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  width: 98px;  
+  font-size: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 1px;
+  text-align: center;
+  margin: 3px 5px
+}
+
+.profile-button-qrcode {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  width: 98px;  
+  font-size: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 1px;
+  text-align: center;
+  margin: 3px 5px
 }
 
 .profile-button img{
@@ -478,7 +804,21 @@ font-size: 14px;
   vertical-align: middle;
   width: 14px;
   margin-right: 6px;  
-  }
+}
+
+.profile-button-friends img{
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  margin-right: 6px;  
+}
+
+.profile-button-qrcode img{
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  margin-right: 6px;  
+}
 
   .chat-button{
     display: block;
