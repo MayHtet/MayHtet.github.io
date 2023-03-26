@@ -114,7 +114,7 @@ function getWorkerId() {
     const queryString = window.location.search;
     console.log(queryString);
     const urlParams = new URLSearchParams(queryString);
-    const workerId = urlParams.get('workerId')
+    const workerId = urlParams.get('workerId');
     return workerId;
 }
 
