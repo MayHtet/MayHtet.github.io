@@ -110,6 +110,14 @@ function getUniqueId() {
   return localStorage['uid'];
 }
 
+function getWorkerId() {
+    const queryString = window.location.search;
+    console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    const workerId = urlParams.get('workerId')
+    return workerId;
+}
+
 // Log the given event.
 function logEvent(event, customName, customInfo) {
 	
@@ -134,12 +142,13 @@ function logEvent(event, customName, customInfo) {
   if (event) {target = elementDesc(event.target);}
   var state = location.hash;
   var title = document.title;
-
+  var workerId = getWorkerId();
+  
   if (ENABLE_CONSOLE_LOGGING) {
-    console.log(uid, time, eventName, title, target, info, state, LOG_VERSION);
+    console.log(workerId, uid, time, eventName, title, target, info, state, LOG_VERSION);
   }
   if (ENABLE_NETWORK_LOGGING) {
-    sendNetworkLog(uid, time, eventName, title, target, info, state, LOG_VERSION);
+    sendNetworkLog(workerId, uid, time, eventName, title, target, info, state, LOG_VERSION);
   }
 }
 
@@ -162,7 +171,7 @@ return {
 //
 // 1. Create a Google form called "Network Log" at forms.google.com.
 // 2. Set it up to have several "short answer" questions; here we assume
-//    eight questions: uid, time, eventName, title, target, info, state, version.
+//    nine questions: workerId, uid, time, eventName, title, target, info, state, version.
 // 3. Run googlesender.py to make a javascript
 //    function that submits records directly to the form.
 // 4. Put that function in here, and replace the current sendNetworkLog
@@ -182,8 +191,9 @@ return {
 
 // Network Log submission function
 // submits to the google form at this URL:
-// docs.google.com/forms/d/e/1FAIpQLScsoht809pXb-fVY4opooBQWfQbN739Lg0THmp66Tp67_UreA/viewform?usp=sf_link
+// docs.google.com/forms/d/e/1FAIpQLSey0NinnoYmEBTsuHowENri4Joqm8yNJnRwvptQ2Ri_-cvVQQ/viewform?usp=sf_link
 function sendNetworkLog(
+    workerid,
     uid,
     time,
     eventname,
@@ -192,8 +202,9 @@ function sendNetworkLog(
     info,
     state,
     version) {
-  var formid = "e/1FAIpQLScsoht809pXb-fVY4opooBQWfQbN739Lg0THmp66Tp67_UreA";
+  var formid = "e/1FAIpQLSey0NinnoYmEBTsuHowENri4Joqm8yNJnRwvptQ2Ri_-cvVQQ";
   var data = {
+    "entry.737724552": workerid,
     "entry.1052943962": uid,
     "entry.716537476": time,
     "entry.1173571942": eventname,
