@@ -142,7 +142,13 @@ function logEvent(event, customName, customInfo) {
   if (event) {target = elementDesc(event.target);}
   var state = location.hash;
   var title = document.title;
-  var workerId = getWorkerId();
+  
+    if (sessionStorage.getItem("workerId") === null) {
+        var workerId = getWorkerId();
+        sessionStorage.setItem("workerId", workerId);
+    } else {
+        var workerId = sessionStorage.getItem("workerId");
+    }
   
   if (ENABLE_CONSOLE_LOGGING) {
     console.log(workerId, uid, time, eventName, title, target, info, state, LOG_VERSION);
