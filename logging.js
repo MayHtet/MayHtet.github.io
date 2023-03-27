@@ -143,7 +143,7 @@ function logEvent(event, customName, customInfo) {
   var state = location.hash;
   var title = document.title;
   
-    if (sessionStorage.getItem("workerId") === null) {
+    if (sessionStorage.getItem("workerId") === null || sessionStorage.getItem("workerId") === "null") {
         var workerId = getWorkerId();
         sessionStorage.setItem("workerId", workerId);
     } else {
